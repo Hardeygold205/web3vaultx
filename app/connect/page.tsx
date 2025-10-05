@@ -130,6 +130,206 @@ function Connect() {
       name: "yearn",
       image: "/yearn.png",
     },
+    {
+      name: "BulkSender",
+      image: "/yearn.png",
+    },
+    {
+      name: "yearn",
+      image: "/bulksender.png",
+    },
+    {
+      name: "Betoken",
+      image: "/betoken.png",
+    },
+    {
+      name: "Escaroo",
+      image: "/escaroo.png",
+    },
+    {
+      name: "Token Market",
+      image: "/tokamak.png",
+    },
+    {
+      name: "Loom Network",
+      image: "/loomnetwork.png",
+    },
+    {
+      name: "Mint Base",
+      image: "/mintbase.jpg",
+    },
+    {
+      name: "Affagato",
+      image: "/affogato.png",
+    },
+    {
+      name: "StablePay",
+      image: "/stablepay.jpg",
+    },
+    {
+      name: "Defi Saver",
+      image: "/defisaver.jpg",
+    },
+    {
+      name: "ThorChain",
+      image: "/thorchain.jpeg",
+    },
+    {
+      name: "yearn",
+      image: "/yearn.png",
+    },
+    {
+      name: "HelioWallet",
+      image: "/helio.png",
+    },
+    {
+      name: "MCDEX",
+      image: "/mcdex.png",
+    },
+    {
+      name: "Mesa",
+      image: "/mesa.png",
+    },
+    {
+      name: "Mesa",
+      image: "/mesa.png",
+    },
+    {
+      name: "2Key",
+      image: "/2key.jpg",
+    },
+    {
+      name: "Melon",
+      image: "/melon.png",
+    },
+    {
+      name: "Chainsfr",
+      image: "/chainf3.png",
+    },
+    {
+      name: "Pitch",
+      image: "/pitch.jpeg",
+    },
+    {
+      name: "Unagii",
+      image: "/unagi.png",
+    },
+    {
+      name: "Cream Finance",
+      image: "/cream.jpeg",
+    },
+    {
+      name: "zKSync",
+      image: "/zksync.jpeg",
+    },
+    {
+      name: "Snapshot",
+      image: "/snapshot.jpeg",
+    },
+    {
+      name: "Starname",
+      image: "/starname.png",
+    },
+    {
+      name: "Space",
+      image: "/space.png",
+    },
+    {
+      name: "Shell Exchange",
+      image: "/shell.jpg",
+    },
+    {
+      name: "Maskbook",
+      image: "/maskbook.png",
+    },
+    {
+      name: "DODO",
+      image: "/dodo.png",
+    },
+    {
+      name: "Tokamak Network",
+      image: "/tokamak.png",
+    },
+    {
+      name: "Snapshot",
+      image: "/snapshot.jpeg",
+    },
+    {
+      name: "Ankr",
+      image: "/ankr.jpg",
+    },
+    {
+      name: "zLOT",
+      image: "/zlot.jpg",
+    },
+    {
+      name: "Actus Protocol",
+      image: "/actusprotocol.jpg",
+    },
+    {
+      name: "Rubic Exchange",
+      image: "/rubic.jpg",
+    },
+    {
+      name: "filecone Wallet",
+      image: "/filecoin.png",
+    },
+    {
+      name: "Bancor Wallet",
+      image: "/bancor.png",
+    },
+    {
+      name: "Falconswap",
+      image: "/falconswap.png",
+    },
+    {
+      name: "Harvest Finance",
+      image: "/harvestfinance.jpg",
+    },
+    {
+      name: "OctoFi",
+      image: "/octofi.jpeg",
+    },
+    {
+      name: "Bitfrost Finance",
+      image: "/bitfrost.png",
+    },
+    {
+      name: "Orchid Protocol",
+      image: "/orchid.png",
+    },
+    {
+      name: "Streamr",
+      image: "/streamr.jpg",
+    },
+    {
+      name: "XinFin XDC Network",
+      image: "/xdcnetwork.png",
+    },
+    {
+      name: "Datamine Network",
+      image: "/datamine.jpg",
+    },
+    {
+      name: "DappRadar",
+      image: "/dappradar.png",
+    },
+    {
+      name: "Mushroom Finance",
+      image: "/mushroomfinance.jpg",
+    },
+    {
+      name: "SuperRare",
+      image: "/SR.jpeg",
+    },
+    {
+      name: "HoneySwap",
+      image: "/honeyswap.jpg",
+    },
+    {
+      name: "Fleek",
+      image: "/fleek.png",
+    },
   ];
 
   const handleWalletClick = (name: string, image: string) => {

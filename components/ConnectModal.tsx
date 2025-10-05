@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter as useNa } from "next/navigation";
 
 interface Wallet {
   name: string;
@@ -14,6 +15,7 @@ interface ConnectModalProps {
 
 function ConnectModal({ wallet, isOpen, onClose }: ConnectModalProps) {
   const modalRef = React.useRef<HTMLDialogElement>(null);
+  const router = useNa();
 
   React.useEffect(() => {
     if (isOpen && modalRef.current) {
@@ -49,12 +51,17 @@ function ConnectModal({ wallet, isOpen, onClose }: ConnectModalProps) {
               />
             </div>
             <p className="text-center">
-              You are about to connect your {wallet.name} wallet. Please confirm to proceed.
+              You are about to connect your {wallet.name} wallet. Please confirm
+              to proceed.
             </p>
           </div>
           <div className="modal-action">
             <form method="dialog" onSubmit={handleClose}>
-              <button className="btn">Confirm</button>
+              <button
+                onClick={() => router.push("/wallet-connect")}
+                className="btn">
+                Confirm
+              </button>
               <button
                 type="button"
                 className="btn btn-ghost text-red-500"
