@@ -35,7 +35,7 @@ function ConnectModal({ wallet, isOpen, onClose }: ConnectModalProps) {
       <dialog
         ref={modalRef}
         id="wallet_modal"
-        className="modal modal-bottom sm:modal-middle"
+        className="modal modal-bottom sm:modal-middle text-white"
         onClose={handleClose}>
         <div className="modal-box">
           <h3 className="font-bold text-lg">Connect {wallet.name}</h3>
@@ -49,16 +49,15 @@ function ConnectModal({ wallet, isOpen, onClose }: ConnectModalProps) {
               />
             </div>
             <p className="text-center">
-              You are about to connect your {wallet.name} wallet. This is a
-              demo—no real connection is made.
+              You are about to connect your {wallet.name} wallet. Please confirm to proceed.
             </p>
           </div>
           <div className="modal-action">
             <form method="dialog" onSubmit={handleClose}>
-              <button className="btn">Connect</button>
+              <button className="btn">Confirm</button>
               <button
                 type="button"
-                className="btn btn-ghost"
+                className="btn btn-ghost text-red-500"
                 onClick={handleClose}>
                 Cancel
               </button>

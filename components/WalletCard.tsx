@@ -11,11 +11,11 @@ function WalletCard({ name, image, onClick }: WalletCardProps) {
   return (
     <button
       onClick={() => onClick(name, image)}
-      className="flex flex-col items-center justify-center gap-3 bg-slate-200 p-6 text-center transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg">
-      <div className="w-16 h-16 rounded-xl flex items-center justify-center p-5">
-        <Image src={image} alt={name} width={50} height={50} />
+      className="flex flex-col items-center justify-center gap-10 p-4 text-center transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg">
+      <div className="w-48 h-48 rounded-xl flex items-center  bg-slate-200 justify-center p-5">
+        <Image src={image} alt={name} width={320} height={320} />
       </div>
-      <h1 className="text-xl font-extrabold">{name}</h1>
+      <h1 className="text-xl font-extrabold text-white">{name}</h1>
     </button>
   );
 }

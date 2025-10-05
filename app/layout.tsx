@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dapps Vault System",
+  title: "Web3 Vault System",
   description: "Secure wallets and decentralized applications.",
+  icons: {
+    icon: "/streamr.jpg",
+  },
 };
 
 export default function RootLayout({
