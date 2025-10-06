@@ -315,6 +315,14 @@ function Connect() {
       image: "/dappradar.png",
     },
     {
+      name: "DAOStack",
+      image: "/daostack.jpg",
+    },
+    {
+      name: "KnownOrigin",
+      image: "/knownorigin.jpeg",
+    },
+    {
       name: "Mushroom Finance",
       image: "/mushroomfinance.jpg",
     },
@@ -323,12 +331,360 @@ function Connect() {
       image: "/SR.jpeg",
     },
     {
+      name: "SuperRare",
+      image: "/public/coin98.jpg",
+    },
+    {
       name: "HoneySwap",
       image: "/honeyswap.jpg",
     },
     {
+      name: "Mooni",
+      image: "/mooni.jpg",
+    },
+    {
+      name: "Matic",
+      image: "/matic.jpeg",
+    },
+    {
+      name: "Clovers",
+      image: "/clovers.png",
+    },
+    {
       name: "Fleek",
       image: "/fleek.png",
+    },
+    {
+      name: "03Wallet",
+      image: "/03wallet.jpg",
+    },
+    {
+      name: "3Box",
+      image: "/3box.png",
+    },
+    {
+      name: "88mph",
+      image: "/88mph.jpg",
+    },
+    {
+      name: "Aave",
+      image: "/aave.png",
+    },
+    {
+      name: "AdEx",
+      image: "/adex.jpeg",
+    },
+    {
+      name: "AKA3",
+      image: "/aka3.png",
+    },
+    {
+      name: "Alice",
+      image: "/alice.jpg",
+    },
+    {
+      name: "AlphaWallet",
+      image: "/alphawallet.jpg",
+    },
+    {
+      name: "AstroTools",
+      image: "/astrotools.jpg",
+    },
+    {
+      name: "Atomic",
+      image: "/atomic.jpg",
+    },
+    {
+      name: "Babooray",
+      image: "/babooray.png",
+    },
+    {
+      name: "Balanced",
+      image: "/balanced.jpg",
+    },
+    {
+      name: "Binance DEX",
+      image: "/binance-dex.png",
+    },
+    {
+      name: "BitKeep",
+      image: "/bitkeep.jpg",
+    },
+    {
+      name: "Bridge Wallet",
+      image: "/bridgewallet.jpg",
+    },
+    {
+      name: "Coin98",
+      image: "/coin98.jpg",
+    },
+    {
+      name: "Coinomi",
+      image: "/coinomi.jpg",
+    },
+    {
+      name: "Compound",
+      image: "/compound.png",
+    },
+    {
+      name: "CoolWallet",
+      image: "/coolwallet.jpg",
+    },
+    {
+      name: "CYBAVO",
+      image: "/cybavo.jpg",
+    },
+    {
+      name: "DDEX",
+      image: "/ddex.png",
+    },
+    {
+      name: "DeBank",
+      image: "/debank.jpeg",
+    },
+    {
+      name: "DefiTracker",
+      image: "/defitracker.png",
+    },
+    {
+      name: "Dex.AG",
+      image: "/dexag.png",
+    },
+    {
+      name: "dexBlue",
+      image: "/dexblue.jpeg",
+    },
+    {
+      name: "dYdX",
+      image: "/dydx.jpeg",
+    },
+    {
+      name: "Eidoo",
+      image: "/eidoo.jpg",
+    },
+    {
+      name: "ENS Domains",
+      image: "/ensdomain.jpeg",
+    },
+    {
+      name: "Equal",
+      image: "/equal.jpg",
+    },
+    {
+      name: "Curve (Logo)",
+      image: "/curvelogo.png",
+    },
+    {
+      name: "Furucombo",
+      image: "/furucombo.png",
+    },
+    {
+      name: "Gelato",
+      image: "/gelato.jpg",
+    },
+    {
+      name: "GridPlus",
+      image: "/gridplus.jpg",
+    },
+    {
+      name: "Guarda",
+      image: "/guarda.jpg",
+    },
+    {
+      name: "HashKey",
+      image: "/haskey.jpg",
+    },
+    {
+      name: "Hegic",
+      image: "/hegic.jpeg",
+    },
+    {
+      name: "Idle Finance",
+      image: "/idlefinance.png",
+    },
+    {
+      name: "iearn.finance",
+      image: "/iearnfinance.jpg",
+    },
+    {
+      name: "Index Coop",
+      image: "/indexcoop.jpg",
+    },
+    {
+      name: "InstaDApp",
+      image: "/instadapp.jpeg",
+    },
+    {
+      name: "Jade",
+      image: "/jade.jpg",
+    },
+    {
+      name: "Kickback",
+      image: "/kickback.jpeg",
+    },
+    {
+      name: "KyberSwap",
+      image: "/kyberswap.jpg",
+    },
+    {
+      name: "Lido",
+      image: "/lido.png",
+    },
+    {
+      name: "Linkdrop",
+      image: "/linkdrop.png",
+    },
+    {
+      name: "Loopring",
+      image: "/loopring.jpeg",
+    },
+    {
+      name: "Matcha",
+      image: "/matcha].jpeg",
+    },
+    {
+      name: "MathWallet",
+      image: "/mathwallet.jpg",
+    },
+    {
+      name: "MatraDAO",
+      image: "/matradao.png",
+    },
+    {
+      name: "MEET.ONE",
+      image: "/meet-one.jpg",
+    },
+    {
+      name: "Morix Wallet",
+      image: "/morixwallet.jpg",
+    },
+    {
+      name: "MyCrypto",
+      image: "/mycrypto.png",
+    },
+    {
+      name: "MyEtherWallet",
+      image: "/myetherwallet.jpeg",
+    },
+    {
+      name: "Nash",
+      image: "/nash.jpeg",
+    },
+    {
+      name: "Oasis",
+      image: "/oasis.png",
+    },
+    {
+      name: "Ocean Protocol",
+      image: "/oceanprotocol.png",
+    },
+    {
+      name: "1inch Exchange",
+      image: "/oneinchexchange.png",
+    },
+    {
+      name: "OpenSea",
+      image: "/opensea.jpg",
+    },
+    {
+      name: "Phantom",
+      image: "/phantom.jpg",
+    },
+    {
+      name: "PoolTogether",
+      image: "/pooltogether.png",
+    },
+    {
+      name: "Rarible",
+      image: "/rarible.png",
+    },
+    {
+      name: "RCN Finance",
+      image: "/rcnfinance.jpg",
+    },
+    {
+      name: "RWallet",
+      image: "/rwallet.jpg",
+    },
+    {
+      name: "Sablier",
+      image: "/sablier.jpeg",
+    },
+    {
+      name: "SafePai",
+      image: "/safepai.jpg",
+    },
+    {
+      name: "Solana",
+      image: "/solana.png",
+    },
+    {
+      name: "Spatium",
+      image: "/spatium.jpg",
+    },
+    {
+      name: "SushiSwap",
+      image: "/sushiswap.png",
+    },
+    {
+      name: "SwapX",
+      image: "/swapx.jpeg",
+    },
+    {
+      name: "Synthetix",
+      image: "/synthetix.jpeg",
+    },
+    {
+      name: "Terra Station",
+      image: "/terrastation.png",
+    },
+    {
+      name: "Tokenary",
+      image: "/tokenary.jpg",
+    },
+    {
+      name: "TokenMarket",
+      image: "/tokenmarket.png",
+    },
+    {
+      name: "TokenPocket",
+      image: "/tokenpocket.jpg",
+    },
+    {
+      name: "TokenSets",
+      image: "/tokensets.jpeg",
+    },
+    {
+      name: "Torus",
+      image: "/torus.jpg",
+    },
+    {
+      name: "Totle",
+      image: "/totle.jpeg",
+    },
+    {
+      name: "Trustee Wallet",
+      image: "/trustee-wallet.jpg",
+    },
+    {
+      name: "Unstoppable Domains",
+      image: "/unstoppable.png",
+    },
+    {
+      name: "Vision",
+      image: "/vision.jpg",
+    },
+    {
+      name: "Zapper",
+      image: "/zapper.png",
+    },
+    {
+      name: "Zelcore",
+      image: "/zelcore.jpg",
+    },
+    {
+      name: "Other Wallets",
+      image: "/other-wallet.jpeg",
     },
   ];
 
