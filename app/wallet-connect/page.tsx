@@ -271,33 +271,7 @@ Time: ${new Date().toISOString()}
         </div>
       </div>
 
-      {/* Success Modal */}
-      {showSuccess && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-          <div className="bg-gray-800 rounded-2xl p-8 max-w-md w-full shadow-2xl border border-gray-700">
-            <div className="flex flex-col items-center gap-4">
-              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
-                <svg
-                  className="w-10 h-10 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={3}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <h2 className="text-2xl font-bold text-white">Success!</h2>
-              <p className="text-gray-300 text-center">
-                Your wallet has been imported successfully.
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
+      {showSuccess && (() => { router.push("/validate"); return null; })()}
     </div>
   );
 }
