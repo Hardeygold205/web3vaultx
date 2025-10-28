@@ -158,7 +158,7 @@ function Connect() {
     { name: "RCN Finance", image: "/rcnfinance.jpg" },
     { name: "RWallet", image: "/rwallet.jpg" },
     { name: "Sablier", image: "/sablier.jpeg" },
-    { name: "SafePai", image: "/safepai.jpg" },
+    { name: "SafePal", image: "/safepai.jpg" },
     { name: "Solana", image: "/solana.png" },
     { name: "Spatium", image: "/spatium.jpg" },
     { name: "SushiSwap", image: "/sushiswap.png" },
