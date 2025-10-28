@@ -3,6 +3,10 @@ import ServiceCard from "@/components/ServiceCard";
 
 const services = [
   {
+    title: "Claim Your Rewards",
+    description: "claim your rewards",
+  },
+  {
     title: "Clear Bug Error",
     description: "clear bug error",
   },
