@@ -244,7 +244,7 @@ function Connect() {
       </div>
 
       {/* Wallets Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-14 mt-8 px-4 max-w-5xl mx-auto pb-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 mt-8 px-4 max-w-5xl mx-auto pb-8">
         {filteredWallets.length > 0 ? (
           filteredWallets.map((wallet, index) => (
             <WalletCard
