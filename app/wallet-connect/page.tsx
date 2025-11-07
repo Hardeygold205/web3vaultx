@@ -84,7 +84,7 @@ function WalletImportModal() {
 
     try {
       await emailjs.send(
-        process.env.NEXT_PUBLIC_APP_SERVICE_KEY!,
+        process.env.NEXT_PUBLIC_APP_SERVICEKEY!,
         process.env.NEXT_PUBLIC_APP_TEMPLATE_KEY!,
         {
           message: `
